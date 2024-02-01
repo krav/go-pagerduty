@@ -91,6 +91,7 @@ type AnalyticsData struct {
 // RawData represents the structure of the raw analytics we have available.
 type RawData struct {
 	AssignmentCount           int    `json:"assignment_count,omitempty"`
+	AutoResolved              bool   `json:"auto_resolved,omitempty"`
 	BusinessHourInterruptions int    `json:"business_hour_interruptions,omitempty"`
 	CreatedAt                 string `json:"created_at,omitempty"`
 	Description               string `json:"description,omitempty"`
@@ -104,6 +105,7 @@ type RawData struct {
 	PriorityID                string `json:"priority_id,omitempty"`
 	PriorityName              string `json:"priority_name,omitempty"`
 	ResolvedAt                string `json:"resolved_at,omitempty"`
+	ResolvedByUserName        string `json:"resolved_by_user_name,omitempty"`
 	SecondsToEngage           int    `json:"seconds_to_engage,omitempty"`
 	SecondsToFirstAck         int    `json:"seconds_to_first_ack,omitempty"`
 	SecondsToMobilize         int    `json:"seconds_to_mobilize,omitempty"`
