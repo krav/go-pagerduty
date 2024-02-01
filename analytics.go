@@ -98,6 +98,7 @@ type RawData struct {
 	EngagedSeconds            int    `json:"engaged_seconds,omitempty"`
 	EngagedUserCount          int    `json:"engaged_user_count,omitempty"`
 	EscalationCount           int    `json:"escalation_count,omitempty"`
+	EscalationPolicyID        string `json:"escalation_policy_id,omitempty"`
 	ID                        string `json:"id,omitempty"`
 	IncidentNumber            int    `json:"incident_number,omitempty"`
 	IsMajor                   bool   `json:"major,omitempty"`
@@ -118,6 +119,7 @@ type RawData struct {
 	TeamName                  string `json:"team_name,omitempty"`
 	Urgency                   string `json:"urgency,omitempty"`
 	UserDefinedEffortSeconds  int    `json:"user_defined_effort_seconds,omitempty"`
+	ReassignmentCount         int    `json:"reassignment_count,omitempty"`
 }
 
 // GetAggregatedIncidentData gets the aggregated incident analytics for the requested data.
