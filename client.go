@@ -118,7 +118,7 @@ func unmarshalApiErrorObject(data []byte) (APIErrorObject, error) {
 		return aeo, nil
 	}
 	// still failed, so return the original error
-	return aeo, err
+	return aeo, fmt.Errorf(string(data))
 }
 
 // NullAPIErrorObject is a wrapper around the APIErrorObject type. If the Valid
